@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Scatterplot Graph</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
 </head>
 <body>
-    
+    <div id="scatterplot">
 
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+
+
+    <div id="legend" class="key">
+        <div class="key-row">
+            <div class="key-color-1"></div>
+            <label>Without Doping allegations</label>
+        </div>
+        <div class="key-row">
+            <div class="key-color-2"></div> 
+            <label>With Doping allegations</label>
+        </div>
+    </div>
     <script src="script.js" module="true"></script>
 </body>
 </html>
