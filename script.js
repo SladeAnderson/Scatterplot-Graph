@@ -82,7 +82,7 @@ function drawScatterPlot(Data) {
             tooltip.transition()
                 .duration(200)
                 .style('opacity', 1);
-            tooltip.html(`${d.Name}: ${d.Nationality}<br>Year: ${d.Year}, Time: ${d.Time}`)
+            tooltip.html(`${d.Name}: ${d.Nationality}<br>Year: ${d.Year}, Time: ${d.Time}<br>${d.Doping ? d.Doping : 'No Doping Allegations'}`)
                 .attr('data-year', d.Year)
                 .style('left', (event.pageX + 5) + 'px')
                 .style('top', (event.pageY - 28) + 'px');
